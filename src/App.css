@@ -1,0 +1,73 @@
+body{
+  background-color: #ff9980;
+  
+}
+
+.container{
+  background-color:#ffe6f0;
+  min-height: auto;
+  width: auto;
+}
+
+#inner-container{
+  display: grid;
+  grid-template-columns:auto auto;
+}
+
+.header{
+  background-color: #ff4d4d;
+  text-align: center;
+}
+
+.to-do{
+  background-color: #fff;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto; /*top and bottom 40 px and horizontally centered */
+  border: 2px solid;
+}
+
+.to-do h2{
+  text-align: center;
+}
+
+#todo-form input{
+  background-color: #ff9980;
+  border: 0;
+  width: 200px;
+  height: 50px; 
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #fff;
+}
+ 
+#todo-form input::placeholder{
+  color: black;
+}
+
+#todo-form input:focus, #todo-form button:focus{
+  outline: none;
+}
+
+#todo-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #ffd6cc;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  color:#fff;
+}
+
+.water{
+  text-align: center;
+  background-color: #fff;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto; /*top and bottom 40 px and horizontally centered */
+  border: 2px solid;
+}
