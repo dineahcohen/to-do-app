@@ -1,46 +1,56 @@
 body{
-  background-color: #ff9980;
+  background-color: #fff;
   
 }
 
 .container{
-  background-color:#ffe6f0;
+  background-color: #e6f0ff;
   min-height: auto;
   width: auto;
 }
 
 #inner-container{
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  padding: 50px 300px;
 }
 
 .header{
-  background-color: #ff4d4d;
+  background-color: #4d79ff;
+  color: #fff;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
+
 .to-do{
-  background-color: #fff;
+  background-color:#000;
   min-height: 500px;
   width: 400px;
-  margin: 40px auto; /*top and bottom 40 px and horizontally centered */
+   /*top and bottom 40 px and horizontally centered */
   border: 2px solid;
+  border-radius: 15px;
 }
 
 .to-do h2{
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
 
 #todo-form input{
-  background-color: #ff9980;
-  border: 0;
+  background-color: #fff;
+  border: solid 1px;
   width: 200px;
   height: 50px; 
   padding: 0 20px;
   margin: 20px;
+  font-family: 'Chocolate Covered Raindrops';
   font-size: 18px;
   border-radius: 10px;
-  color: #fff;
+  color: black;
 }
  
 #todo-form input::placeholder{
@@ -56,11 +66,12 @@ body{
   width: 80px;
   border-radius: 5px;
   border: 0;
-  background-color: #ffd6cc;
+  background-color: #ffcc00;
   font-size: 15px;
+  font-family: 'Chocolate Covered Raindrops';
   cursor: pointer;
   font-weight: bolder;
-  color:#fff;
+  color: #000000;
 }
 
 .water{
@@ -68,6 +79,43 @@ body{
   background-color: #fff;
   min-height: 500px;
   width: 400px;
-  margin: 40px auto; /*top and bottom 40 px and horizontally centered */
+ /*top and bottom 40 px and horizontally centered */
   border: 2px solid;
+  border-radius: 15px;
 }
+
+.water h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list{
+  color: white;
+  width: 300px;
+  height: 40px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color:#4d79ff;
+}
+
+.list p{
+  padding: 10px;
+  position: relative;
+  font-family: 'Chocolate Covered Raindrops';
+}
+
+.list p span{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.faicons{
+  margin: 0 5px;
+  font-size: 15px;
+}
+
+@font-face{
+  font-family: 'Chocolate Covered Raindrops';
+  src: url(/src/fonts/chocolate-covered-raindrops/Chocolate\ Covered\ Raindrops.ttf);
+}
+

@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
+import ListItems from './ListItems';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faTrash} from '@fortawesome/free-solid-svg-icons';
 
+library.add(faTrash);
 
 class Todo extends React.Component{
     state= {
@@ -10,7 +14,6 @@ class Todo extends React.Component{
           key:''
         }
     };
-
 
     handleInput= (e) =>{
         this.setState({
@@ -23,13 +26,28 @@ class Todo extends React.Component{
 
     addItem= (e)=>{
         e.preventDefault()
-    }
+        const newItem= this.state.currentItem;
+        console.log(newItem);
+        if(newItem.text !==""){
+          const items = [...this.state.items, newItem];
+        this.setState({
+          items: items,
+            currentItem: {
+              text: '',
+              key: ''
+            }
+          })
+        }
+    };
+
+    
+
 
     render(){
         return(
           <div className="to-do">
             <header>
-                <h2> To-Do List</h2>
+                <h2 className="card-top"> To-Do List</h2>
                 <form id="todo-form" onSubmit= {this.addItem}>
                   <input type="text" 
                   placeholder= "Enter text" 
@@ -39,6 +57,10 @@ class Todo extends React.Component{
                   <button type= "submit"> Go!</button>
                 </form>
           </header>
+          <ListItems 
+          items= {this.state.items}
+          deleteItem= {this.deleteItem}
+          />
           </div>
         );
       }
