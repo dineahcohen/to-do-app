@@ -1,0 +1,17 @@
+/* Header fonts */
+@font-face {
+    font-family: 'Merienda One', cursive;
+    src: url(./Merienda_One/MeriendaOne-Regular.ttf);
+   }
+
+
+   /* Body fonts*/
+@font-face{
+    font-family: 'Short Stack', cursive;
+    src: url(./Short_Stack/ShortStack-Regular.ttf);
+}
+
+
+
+
+/*my nigga remix*/

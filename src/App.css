@@ -1,3 +1,21 @@
+/* Header fonts */
+@font-face {
+  font-family: 'Merienda One';
+  src: url(./fonts/Merienda_One/MeriendaOne-Regular.ttf);
+ }
+
+ @font-face{
+  font-family: 'Gochi Hand';
+  src: url(./fonts/Gochi_Hand/GochiHand-Regular.ttf);
+}
+
+ /* Body fonts*/
+@font-face{
+  font-family: 'Short Stack';
+  src: url(./fonts/Short_Stack/ShortStack-Regular.ttf);
+}
+
+
 body{
   background-color: #fff;
   
@@ -18,9 +36,9 @@ body{
 
 .header{
   background-color: #4d79ff;
-  color: #fff;
+  color: #000;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Merienda One';
   font-weight: bold;
 }
 
@@ -29,14 +47,13 @@ body{
   background-color:#000;
   min-height: 500px;
   width: 400px;
-   /*top and bottom 40 px and horizontally centered */
   border: 2px solid;
   border-radius: 15px;
 }
 
 .to-do h2{
   color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Merienda One', cursive;
   text-align: center;
 }
 
@@ -47,7 +64,6 @@ body{
   height: 50px; 
   padding: 0 20px;
   margin: 20px;
-  font-family: 'Chocolate Covered Raindrops';
   font-size: 18px;
   border-radius: 10px;
   color: black;
@@ -68,7 +84,6 @@ body{
   border: 0;
   background-color: #ffcc00;
   font-size: 15px;
-  font-family: 'Chocolate Covered Raindrops';
   cursor: pointer;
   font-weight: bolder;
   color: #000000;
@@ -85,7 +100,7 @@ body{
 }
 
 .water h2{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:'Merienda One';
 }
 
 .list{
@@ -100,7 +115,7 @@ body{
 .list p{
   padding: 10px;
   position: relative;
-  font-family: 'Chocolate Covered Raindrops';
+  font-family: 'Short Stack', cursive;
 }
 
 .list p span{
@@ -114,8 +129,4 @@ body{
   font-size: 15px;
 }
 
-@font-face{
-  font-family: 'Chocolate Covered Raindrops';
-  src: url(/src/fonts/chocolate-covered-raindrops/Chocolate\ Covered\ Raindrops.ttf);
-}
 

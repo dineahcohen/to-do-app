@@ -27,7 +27,6 @@ class Todo extends React.Component{
     addItem= (e)=>{
         e.preventDefault()
         const newItem= this.state.currentItem;
-        console.log(newItem);
         if(newItem.text !==""){
           const items = [...this.state.items, newItem];
         this.setState({
@@ -40,7 +39,17 @@ class Todo extends React.Component{
         }
     };
 
+    deleteItem(key){
+      const filteredItems= this.state.items.filter(item =>
+        item.key!==key);
+      this.setState({
+        items: filteredItems
+      })
+  
+    }
     
+
+
 
 
     render(){
