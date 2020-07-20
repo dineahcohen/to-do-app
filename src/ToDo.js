@@ -35,22 +35,18 @@ class Todo extends React.Component{
               text: '',
               key: ''
             }
-          })
-        }
+          });
+        };
     };
 
-    deleteItem(key){
+    deleteItem= (key)=>{
       const filteredItems= this.state.items.filter(item =>
         item.key!==key);
       this.setState({
         items: filteredItems
-      })
-  
-    }
+      });
+    };
     
-
-
-
 
     render(){
         return(
