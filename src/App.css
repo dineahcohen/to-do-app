@@ -89,19 +89,15 @@ body{
   color: #000000;
 }
 
-.water{
+/* .water{
   text-align: center;
   background-color: #fff;
   min-height: 500px;
   width: 400px;
- /*top and bottom 40 px and horizontally centered */
   border: 2px solid;
   border-radius: 15px;
 }
-
-.water h2{
-  font-family:'Merienda One';
-}
+*/
 
 .list{
   color: white;
@@ -122,6 +118,17 @@ body{
   position: absolute;
   right: 10px;
   cursor: pointer;
+}
+
+.list p input{
+  background-color: transparent;
+  border: 0;
+  color:#fff;
+  font-size: 18px;
+}
+
+.list p input{
+  outline: none;
 }
 
 .faicons{

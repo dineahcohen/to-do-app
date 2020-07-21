@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import Water from './Water';
 import ToDo from './ToDo';
 
 class App extends React.Component{
@@ -23,7 +22,6 @@ class App extends React.Component{
         <div id="inner-container"> 
           <ToDo/>
           
-          <Water/>
         </div>
 
 

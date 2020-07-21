@@ -6,7 +6,14 @@ function ListItems(props){
     const items= props.items;
     const listItems= items.map(item =>{
         return <div className= "list" key= {item.key}>
-            <p> {item.text}
+            <p>
+                <input type= "text" 
+                id={item.key} // unique identifer
+                value= {item.text} 
+                onChange = {
+                    (e) =>{props.editTask(e.target.value, item.key)}
+                }
+                />
             <span> 
                 <FontAwesomeIcon
                  className="faicons" 

@@ -46,7 +46,20 @@ class Todo extends React.Component{
         items: filteredItems
       });
     };
-    
+
+
+    editTask = (text,key) =>{
+      const items= this.state.items;
+      items.map(item =>{
+        if (item.key === key)
+        {
+          item.text=text;
+        }
+        })
+        this.setState({
+          items:items
+        })
+    }
 
     render(){
         return(
@@ -65,6 +78,7 @@ class Todo extends React.Component{
           <ListItems 
           items= {this.state.items}
           deleteItem= {this.deleteItem}
+          editTask= {this.editTask}
           />
           </div>
         );
