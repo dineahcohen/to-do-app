@@ -1,31 +1,21 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import ToDo from './ToDo';
+import ToDo from './components/ToDo';
 
-class App extends React.Component{
-  state= {
+class App extends React.Component {
+  state = {
     items: [],
-    currentItem:{
+    currentItem: {
       text: '',
-      key:''
+      key: ''
     }
-};
+  };
 
-  render(){
-    return(
-      <div className= "container">
-        <div className="header">
-          <Header tagline= "Everything starts with Din!"/>
-        </div>
-
-        <div id="inner-container"> 
-          <ToDo/>
-          
-        </div>
-
-
-    </div>
+  render() {
+    return (
+      <div className="container">
+        <ToDo />
+      </div>
     );
   }
 }
